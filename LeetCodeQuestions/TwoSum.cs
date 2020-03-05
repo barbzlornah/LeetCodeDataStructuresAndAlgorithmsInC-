@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Collections;
+using System.IO;
+using System.Linq;
 
 namespace LeetCodeQuestions
 {
-    class TwoSum
+    public class TwoSum
     {
         public int[] Twosum(int [] nums,int target)
         {
@@ -36,3 +39,12 @@ namespace LeetCodeQuestions
         }
     }
 }
+
+/*
+ *TIME COMPLEXITY : O(N)
+ * The array is traversed only only once. So the time complexity is directly proportional to the size of the array i.e O(N)
+ * 
+ * SPACE COMPLEXITY : O(N)
+ * O(1) + O(N) = O(N). O(1) for the variables and O(N) for the hashmap.For hashmap, wityh increase in the number of entries
+ * ,the hashmaps space will increase linearly.So space complexity of the hashmap is O(N).
+ */
