@@ -14,7 +14,7 @@ using System.Collections.Generic;
 using System.IO;
 
 //brute force solution /time complexity = O(N*N)
-public class SolutionOne
+public class Solution
 {
     public int[] TwoSum(int[] nums, int target)
     {
