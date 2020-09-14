@@ -6,14 +6,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Collections;
 
 namespace LeetCodeQuestions
 {
     public class Longest_Substring_Without_Repeating_Characters
     {
-        public int LengthOfLongestSubstring(String s)
+        public  int LengthOfLongestSubstring(String s)
         {
-            if (s.length() == 0)
+            if (s.Length() == 0)
                 return 0;
             HashMap<Character, Integer> map = new HashMap<Character, Integer>();
             int max = 0;
